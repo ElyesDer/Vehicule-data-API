@@ -40,7 +40,7 @@ $('#bt-show-data').click(  function(){ cardata.generateCarData('data-container')
 </div>
 ```
 
-5. This button when clicked (3.),  will generate selected model data in the given container as a table as well as message container for error handling
+5. The button when clicked (3.),  will generate selected model data in the given container as a table as well as message container for error handling
 ```
   <input id="bt-show-data" type="button" value="Show Data" />
 	<div id="message" style="color : red;"></div> 
