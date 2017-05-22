@@ -30,7 +30,7 @@ cardata.idInitialiser('year', 'maker', 'model', 'trim','message');
 $('#bt-show-data').click(  function(){ cardata.generateCarData('data-container'); } );
 ```
 
-4. Create the HTML select elements that will be contain generated data by the API. IDs must be set according to the values used in the cardata.idInitialiser called in step 3.
+4. Create the HTML select elements that will contain generated data by the API. IDs must be set according to the values used in the cardata.idInitialiser called in step 3.
 ```
 <div>
   <select name="year" id="year"></select>  
