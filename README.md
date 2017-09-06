@@ -92,17 +92,23 @@ You can request data from server in every possible way and you can filter and sh
 To return entire vehicule data
 Minimal request parameter : 
 https://cardata.000webhostapp.com/api.php/vehicule?call=getData&maker=kia
+
 ```For every Kia model from 1800 to date```
 
 More parameter :
 ie : https://cardata.000webhostapp.com/api.php/vehicule?call=getData&maker=kia&model=rio%20sedan&year=2010
+
 ```For every Kia Rio Sedan made in 2010.```
 
 * Specific columns result :
 - getMakers : https://cardata.000webhostapp.com/api.php/vehicule?call=getMakers&model=rio%20sedan
+
 ```For every maker with a model car named 'rio sedan'```
+
 - getModels : https://cardata.000webhostapp.com/api.php/vehicule?call=getModels&maker=kia&year=2011
+
 ```For every model whose maker is 'kia' produced in '2011'```
+
 - getTrim 
 - getYear
 
