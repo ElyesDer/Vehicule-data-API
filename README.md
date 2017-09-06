@@ -61,8 +61,55 @@ $('#bt-show-data').click(  function(){ cardata.generateCarData('data-container')
 	</table> 
 ```
 
+##### Init and use a search box
+Note : In this demo, i used tag-it create an auto complete search box and this is how i did it
+1. After creating CarData object in .ready function, you need to initialise with your input id
+
+```
+<input  id="in_search" type="button" value="search"\>
+```
+
+```
+$('#in_search').click(  function(){ cardata.UISearch($("#mytags").tagit("assignedTags"),'data-container') } );
+```
+
+2. Create tags that will be shown with auto completetion 
+
+```
+$(document).ready(function() {
+		$("#mytags").tagit(
+		{
+			availableTags: ["year =", "maker =", "model =", "fullmodelname =", "productionend ="],
+			//you can extend this list depends on search tags you wish to provide ( 33 in all, available in the link to the database )
+			allowSpaces :true,
+		});
+```
+###### In-API Search with [?call=-]
+
+You can request data from server in every possible way and you can filter and show specific or all information available
+
+* Build your request using : - getData 
+To return entire vehicule data
+Minimal request parameter : 
+https://cardata.000webhostapp.com/api.php/vehicule?call=getData&maker=kia
+```For every Kia model from 1800 to date```
+
+More parameter :
+ie : https://cardata.000webhostapp.com/api.php/vehicule?call=getData&maker=kia&model=rio%20sedan&year=2010
+```For every Kia Rio Sedan made in 2010.```
+
+* Specific columns result :
+- getMakers : https://cardata.000webhostapp.com/api.php/vehicule?call=getMakers&model=rio%20sedan
+```For every maker with a model car named 'rio sedan'```
+- getModels : https://cardata.000webhostapp.com/api.php/vehicule?call=getModels&maker=kia&year=2011
+```For every model whose maker is 'kia' produced in '2011'```
+- getTrim 
+- getYear
+
+
 ### INFO
 - Built this API for self-purpose and thought of sharing it here.
 - Feel free to contribute.
 - You can check the vehicule-database that the service is calling here : https://github.com/WiildchiilD/Vehicule-data-DB
 - Give our a blog a check : http://www.themeleger.com/
+- Tag-it is available here : https://github.com/cleishm/tag-it
