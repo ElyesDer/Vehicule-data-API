@@ -119,5 +119,5 @@ For every model whose maker is 'kia' produced in '2011'
 - Built this API for self-purpose and thought of sharing it here.
 - Feel free to contribute.
 - You can check the vehicule-database that the service is calling here : https://github.com/WiildchiilD/Vehicule-data-DB
-- Give our a blog a check : http://www.themeleger.com/
+- Give our blog a check : http://www.themeleger.com/
 - Tag-it is available here : https://github.com/cleishm/tag-it
