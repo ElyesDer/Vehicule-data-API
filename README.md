@@ -84,7 +84,7 @@ $(document).ready(function() {
 			allowSpaces :true,
 		});
 ```
-###### In-API Search with [?call=-]
+##### API Search with [?call=-]
 
 You can request data from server in every possible way and you can filter and show specific or all information available
 
